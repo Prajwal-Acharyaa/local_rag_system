@@ -31,20 +31,38 @@ Optimised for a **6 GB RTX 3050** (works on any NVIDIA GPU with ≥ 4 GB VRAM, o
 
 ## Prerequisites
 
-1. **Python 3.10+**
-2. **Ollama** — install from [ollama.com](https://ollama.com), then pull the model:
+1. **Python 3.10+** (verified on Python 3.12)
+2. **Git**
+3. **Ollama** — install from [ollama.com](https://ollama.com), then pull the generative model:
    ```bash
    ollama pull qwen2.5-coder:3b
    ```
 
 ## Installation
 
-```bash
-cd "LOCAL RAG SYSTEM"
-pip install -r requirements.txt
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Prajwal-Acharyaa/local_rag_system.git
+   cd local_rag_system
+   ```
 
-Or install manually:
+2. **Create and activate a virtual environment (recommended):**
+   ```bash
+   # Windows (PowerShell)
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+
+   # macOS / Linux
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+Or install packages manually:
 
 ```bash
 pip install langchain langchain-community langchain-core langchain-text-splitters langchain-huggingface langchain-chroma langchain-ollama chromadb sentence-transformers pypdf
