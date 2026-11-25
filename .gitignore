@@ -1,0 +1,15 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Local ChromaDB vector store
+chroma_store/
+
+# Environment & IDE files
+.env
+.vscode/
+.idea/
